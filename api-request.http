@@ -1,0 +1,94 @@
+### GET USERS
+GET http://localhost:3000/api/users
+Content-Type: application/json
+
+
+### GET USERS BY ID
+GET http://localhost:3000/api/users/62edb56bb6dd88044bd704bf
+Content-Type: application/json
+
+
+
+### DELETE USERS BY ID
+DELETE http://localhost:3000/api/users/62efcd9a86a83d0c7769d16d
+Content-Type: application/json
+
+
+### POST USERS ==> CREATE
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+"name": "Garrett Winters",
+"avatar": "https://randomuser.me/api/portraits/men/2.jpg",
+"email": "garrettwindters@gmail.com",
+"salary": "12000",
+"date": "2022-06-08",
+"status": "Inactive"
+}
+
+### PUT USERS ==> UPDATE
+PUT http://localhost:3000/api/users/62eea07890b10b0da1574b24
+Content-Type: application/json
+
+{
+    "name": "Para eliminarlo",
+    "avatar": "https://randomuser.me/api/portraits/men/4.jpg",
+    "email": "airisatou@gmail.com",
+    "salary": "1000",
+    "date": "2022-04-04",
+    "status": "Jodido"
+}
+
+# ***** PRODUCTS https://fakestoreapi.com/ PARA DATOS DE PRODUCTOS
+
+### GET ALL PRODUCTS
+GET http://localhost:3000/api/products
+Content-Type: application/json
+
+
+### GET PRODUCT BY ID
+GET http://localhost:3000/api/products/62eea38890b10b0da1574b2f
+Content-Type: application/json
+
+
+
+### DELETE PRODUCT BY ID
+DELETE http://localhost:3000/api/products/62eea38890b10b0da1574b2f
+Content-Type: application/json
+
+
+
+### POST PRODUCT ==> CREATE
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+"sku_code": "00003",
+"brandcode": "00003",
+"brand": "SAMSUMG",
+"category": "Electronics",
+"photo": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+"name": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+"price":119.95,
+"stock": 5,
+"date": "2022-08-02",
+"status": "Active",
+"rate": 3.5,
+"reviews": 25
+}
+
+
+### PUT PRODUCT ==> UPDATE PRODUCT
+PUT http://localhost:3000/api/products/62eea38890b10b0da1574b2f
+Content-Type: application/json
+
+{
+    "sku_code": "00001",
+    "brandcode": "00001",
+    "brand": "Elininar",
+    "name": "Probando para eliminar ",
+    "price": 109.95,
+    "stock": 20,
+    "date": "2022-08-01"
+}
